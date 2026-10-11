@@ -227,6 +227,35 @@ export default function Settings() {
         )}
       </Section>
 
+      {/* Feedback */}
+      <Section title="💬 Обратная связь">
+        <p style={{ fontSize: '0.3rem', color: 'var(--text-soft)', marginBottom: '0.2rem', lineHeight: 1.5 }}>
+          Ваше мнение важно для нас! Поделитесь впечатлениями, предложите улучшения или сообщите о проблеме.
+        </p>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSckpu_7VtQoME0QDDo5NtKFi2NwK4YiXDbwxts42tIwUN0iuA/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.2rem',
+            padding: '0.2rem 0.5rem',
+            borderRadius: '12px',
+            background: 'var(--accent-blue)',
+            color: '#fff',
+            textDecoration: 'none',
+            fontSize: '0.38rem',
+            transition: 'all 0.3s',
+            boxShadow: 'var(--shadow)',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = 'var(--shadow-hover)'; }}
+          onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'var(--shadow)'; }}
+        >
+          📝 Заполнить форму
+        </a>
+      </Section>
+
       {/* About */}
       <Section title="ℹ️ О приложении">
         <p style={{ fontSize: '0.32rem', color: 'var(--text-soft)', lineHeight: 1.5 }}>

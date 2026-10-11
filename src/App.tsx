@@ -68,6 +68,20 @@ function AppContent() {
             <span style={{ fontSize: '0.3rem', color: 'var(--text-soft)' }}>
               🔥 {stats.streak} дн.
             </span>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSckpu_7VtQoME0QDDo5NtKFi2NwK4YiXDbwxts42tIwUN0iuA/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Обратная связь"
+              style={{
+                background: 'var(--bg-soft)', border: '1px solid var(--border)',
+                borderRadius: '50%', width: '1rem', height: '1rem',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                fontSize: '0.4rem', textDecoration: 'none', transition: 'all 0.3s',
+              }}
+            >
+              💬
+            </a>
             <button onClick={() => setDarkMode(!darkMode)} style={{
               background: 'var(--bg-soft)', border: '1px solid var(--border)',
               borderRadius: '50%', width: '1rem', height: '1rem',
